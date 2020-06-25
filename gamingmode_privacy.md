@@ -2,6 +2,7 @@
 layout: page
 title: "GamingMode Privacy Policy"
 permalink: /gamingmode/privacy/
+theme: jekyll-theme-tactile
 ---
 
 ## Gaming Mode Privacy Policy
