@@ -117,4 +117,4 @@ We may update our Privacy Policy from time to time. Thus, you are advised to rev
 ## 10. Contact Us
 
 If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us:
-By email: [support.gamingmode@zipoapps.com](support.gamingmode@zipoapps.com)
+By email: [support.gamingmode@zipoapps.com](mailto:support.gamingmode@zipoapps.com)
