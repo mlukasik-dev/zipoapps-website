@@ -18,8 +18,8 @@ The app uses advertising (and in-app payments) to make revenue. The app uses thi
 
 Links to the privacy policies of third party service providers used in the app
 
-Google Play Services: https://www.google.com/policies/privacy/
-AdMob: https://support.google.com/admob/answer/6128543
+Google Play Services: [https://www.google.com/policies/privacy/](https://www.google.com/policies/privacy/)
+AdMob: [https://support.google.com/admob/answer/6128543](https://support.google.com/admob/answer/6128543)
 
 ## 2. Information Collection and Use
 
@@ -45,11 +45,11 @@ Google anonymizes the log data by removing part of the IP address (after 9 month
 
 Online resources:
 
-* Privacy Policy https://www.google.com/policies/technologies/ads/
-* Opt out https://www.google.com/settings/ads
-* Service Information https://privacy.google.com/businesses/adsservices/
-* Partner policy https://policies.google.com/technologies/partner-sites
-* Ad technology providers https://support.google.com/admob/answer/9012903
+* Privacy Policy [https://www.google.com/policies/technologies/ads/](https://www.google.com/policies/technologies/ads/)
+* Opt out [https://www.google.com/settings/ads](https://www.google.com/settings/ads)
+* Service Information [https://privacy.google.com/businesses/adsservices/](https://privacy.google.com/businesses/adsservices/)
+* Partner policy [https://policies.google.com/technologies/partner-sites](https://policies.google.com/technologies/partner-sites)
+* Ad technology providers [https://support.google.com/admob/answer/9012903](https://support.google.com/admob/answer/9012903)
 
 ## 2.2 Google Play Services
 
@@ -68,8 +68,8 @@ Google use the collected information to provide, maintain, protect and improve G
 
 Online resources:
 
-* Google Terms of Service https://policies.google.com/terms
-* Google Privacy Policy https://policies.google.com/privacy
+* Google Terms of Service [https://policies.google.com/terms](https://policies.google.com/terms)
+* Google Privacy Policy [https://policies.google.com/privacy](https://policies.google.com/privacy)
 
 ## 3. Log Data
 
@@ -117,4 +117,4 @@ We may update our Privacy Policy from time to time. Thus, you are advised to rev
 ## 10. Contact Us
 
 If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us:
-By email: support.gamingmode@zipoapps.com
+By email: [support.gamingmode@zipoapps.com](support.gamingmode@zipoapps.com)

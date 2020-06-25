@@ -28,4 +28,4 @@ We may update our Terms and Conditions from time to time. Thus, you are advised 
 
 ## Contact Us
 
-If you have any questions or suggestions about our Terms and Conditions, do not hesitate to contact us. By email: support.gamingmode@zipoapps.com
+If you have any questions or suggestions about our Terms and Conditions, do not hesitate to contact us. By email: [support.gamingmode@zipoapps.com](support.gamingmode@zipoapps.com)
