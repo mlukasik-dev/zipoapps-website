@@ -9,4 +9,4 @@ permalink: /gamingmode/
 
 Now don't worry about annoying calls or notifications while gaming, leave that on Gaming Mode! It can also disable your auto brightness and clear app running in background while gaming. Many more features to explore, Download now!
 
-<a class="app-link" id="googleLink" href="https://play.google.com/store/apps/details?id=com.zappcues.gamingmode"><img class="app-icon" src="/images/badgegoogleplay.png"/></a></div>
+<div><a class="app-link" id="googleLink" href="https://play.google.com/store/apps/details?id=com.zappcues.gamingmode"><img class="app-icon" src="/images/badgegoogleplay.png"/></a></div>
