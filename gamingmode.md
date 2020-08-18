@@ -4,6 +4,7 @@ title: "Gaming Mode"
 permalink: /gamingmode/
 ---
 
+<img class="app-icon" src="/images/icon.png"/>
 # Gaming Mode
 ## The Ultimate Game Experience Booster
 
