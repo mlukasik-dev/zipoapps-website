@@ -1,2 +1,7 @@
 google.com, pub-4563216819962244, DIRECT, f08c47fec0942fa0
 facebook.com, 152103553142619, RESELLER, c3e20eee3f780d68
+totalmediasolutions.com, 7122457, DIRECT
+google.com, pub-2127333773716092, RESELLER, f08c47fec0942fa0
+google.com, pub-1420539090378627, RESELLER, f08c47fec0942fa0
+google.com, pub-7462546778979920, RESELLER, f08c47fec0942fa0
+google.com, pub-1246810218868905, RESELLER, f08c47fec0942fa0
