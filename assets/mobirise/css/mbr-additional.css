@@ -688,29 +688,15 @@ body {
 a {
   transition: color 0.6s;
 }
-.cid-selBZNRwLQ {
-  padding-top: 4rem;
-  padding-bottom: 0rem;
-  background-image: url("../../../assets/images/radio-2974649-2000x1333.jpg");
+.cid-seH9I9OUFB {
+  background-image: url("../../../assets/images/mbr-1920x603.jpg");
 }
-.cid-selBZNRwLQ .image-wrap img {
-  width: 100%;
+.cid-seH9I9OUFB .mbr-section-title {
+  color: #000000;
 }
-@media (min-width: 992px) {
-  .cid-selBZNRwLQ .image-wrap img {
-    display: block;
-    margin: auto;
-    width: 80%;
-  }
-}
-.cid-selBZNRwLQ .mbr-section-title {
-  text-align: left;
-  color: #e6c63b;
-}
-.cid-selBZNRwLQ .mbr-text,
-.cid-selBZNRwLQ .mbr-section-btn {
-  text-align: right;
-  color: #e43f3f;
+.cid-seH9I9OUFB .mbr-text,
+.cid-seH9I9OUFB .mbr-section-btn {
+  color: #000000;
 }
 .cid-selNUpRGng {
   background-image: url("../../../assets/images/car-1245706-2000x1333.jpg");
@@ -778,7 +764,7 @@ a {
 .cid-sedJOECAq2 {
   padding-top: 1rem;
   padding-bottom: 0rem;
-  background-color: #bed3f9;
+  background-color: #f0f0f0;
 }
 .cid-sedJOECAq2 .image-wrap img {
   width: 100%;
