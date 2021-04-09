@@ -5,3 +5,6 @@ google.com, pub-2127333773716092, RESELLER, f08c47fec0942fa0
 google.com, pub-1420539090378627, RESELLER, f08c47fec0942fa0
 google.com, pub-7462546778979920, RESELLER, f08c47fec0942fa0
 google.com, pub-1246810218868905, RESELLER, f08c47fec0942fa0
+
+# Video Wallpaper
+google.com, pub-3878496920714204, DIRECT, f08c47fec0942fa0
