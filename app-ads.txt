@@ -23,8 +23,12 @@ admanmedia.com, 746, RESELLER #yieldmo
 # Rubicon (Magnite)
 rubiconproject.com, 22884, DIRECT, 0bfd66d529a55807
 
-# Video Wallpaper - temp old
-google.com, pub-3878496920714204, DIRECT, f08c47fec0942fa0
+#######################
+# PREVIOUS DEVELOPERS #
+#######################
+google.com, pub-3878496920714204, DIRECT, f08c47fec0942fa0 # Video Wallpaper
+google.com, pub-4725218764245721, DIRECT, f088c47fec942fa0 # Mi Control Center
+#######################
 
 # Chocolate Platform
 vdopia.com, 15638, DIRECT, 49a66ce31a704197 #video
