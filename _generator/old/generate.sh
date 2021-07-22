@@ -64,20 +64,3 @@ if [ $? -ne 0 ]; then
     exit 8
 fi
 
-sed -e "s/\${SLUG}/$slug/g" \
-    -e "s/\${FULLNAME}/$fullname/g" \
-    -e "s/\${SUPPORT_EMAIL}/$email/g" \
-    _APP_dns.md > ../${slug}_dns.md
-if [ $? -ne 0 ]; then
-    echo "error generating app do not sale"
-    exit 8
-fi
-
-sed -e "s/\${SLUG}/$slug/g" \
-    -e "s/\${FULLNAME}/$fullname/g" \
-    -e "s/\${SUPPORT_EMAIL}/$email/g" \
-    _APP_ccpa.md > ../${slug}_ccpa.md
-if [ $? -ne 0 ]; then
-    echo "error generating app CCPA"
-    exit 8
-fi
