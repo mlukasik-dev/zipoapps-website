@@ -8,7 +8,7 @@ permalink: /mns/ccpa
 
 ## (A) INTRODUCTION
 
-This **CCPA Privacy Notice** governs the manner in which Zipo Apps Ltd. processes information collected from consumers who reside in the State of California (“**Consumers**” as defined under the California Consumer Privacy Act of 2018 ("**CCPA**"), and will be referred herein as “**you**”). Any terms defined in the CCPA have the same meaning when used in this Privacy Notice. Further, this Privacy Notice is an integral part of our Privacy Policy and thus, definitions used herein but not defined herein shall have the meaning ascribed to them in our [Privacy Policy](/mns/privacy).
+This **CCPA Privacy Notice** governs the manner in which Material Notification Shade processes information collected from consumers who reside in the State of California (“**Consumers**” as defined under the California Consumer Privacy Act of 2018 ("**CCPA**"), and will be referred herein as “**you**”). Any terms defined in the CCPA have the same meaning when used in this Privacy Notice. Further, this Privacy Notice is an integral part of our Privacy Policy and thus, definitions used herein but not defined herein shall have the meaning ascribed to them in our [Privacy Policy](/mns/privacy).
 
 To learn more about your California privacy rights, please visit [https://oag.ca.gov/privacy/privacy-laws](https://oag.ca.gov/privacy/privacy-laws).
 
