@@ -40,6 +40,9 @@ rubiconproject.com, 22884, DIRECT, 0bfd66d529a55807
 google.com, pub-3878496920714204, DIRECT, f08c47fec0942fa0 # Video Wallpaper
 google.com, pub-4725218764245721, DIRECT, f088c47fec942fa0 # Mi Control Center
 google.com, pub-5972453188838855, DIRECT, f08c47fec0942fa0 # Screen Mirror
+google.com, pub-9378724246417115, DIRECT, f08c47fec0942fa0 # Documents Viewer
+google.com, pub-7002491002409919, RESELLER, f08c47fec0942fa0 # Documents Viewer
+google.com, pub-7002491002409919, DIRECT, f08c47fec0942fa0 # Documents Viewer
 
 #######################
 
