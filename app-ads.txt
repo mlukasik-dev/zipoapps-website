@@ -45,6 +45,7 @@ google.com, pub-7002491002409919, RESELLER, f08c47fec0942fa0 # Documents Viewer
 google.com, pub-7002491002409919, DIRECT, f08c47fec0942fa0 # Documents Viewer
 google.com, pub-7368474868745997, DIRECT, f08c47fec0942fa0 # No Last Seen
 facebook.com, 274238873396488, DIRECT, c3e20eee3f780d68 # No Last Seen
+google.com, pub-5666174117179532, DIRECT, f08c47fec0942fa0 # Notification History Log
 
 #######################
 
