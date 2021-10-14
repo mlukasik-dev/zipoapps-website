@@ -8,7 +8,7 @@ permalink: /${SLUG}/privacy/
 
 *[Last Amended: July 18, 2021]*
 
-This Privacy Policy (“**Privacy Policy**”), is an integral part of our [End User License Agreement](/${SLUG}/terms) ("EULA"), and governs the processing and transfer of personal data collected or processed by ${FULLNAME} (“**Company**”, “**we**”, “**us**” or “**our**”) when you accessing or using our mobile application or our services, all as detailed in the applicable EULA (respectively the "**App**" and "**Service**").
+This Privacy Policy (“**Privacy Policy**”), is an integral part of our [End User License Agreement](/${SLUG}/terms) ("EULA"), and governs the processing and transfer of personal data collected or processed by Zipo Apps Ltd. (“**Company**”, “**we**”, “**us**” or “**our**”) when you accessing or using our mobile application or our services, all as detailed in the applicable EULA (respectively the "**App**" and "**Service**").
 
 Any capitalized terms not defined herein shall have the meaning ascribed to them in the EULA. 
 
