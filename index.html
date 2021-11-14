@@ -240,12 +240,15 @@ Zipoapps Team</div>
 function required() {
     var empt = document.forms["contact_form"]["name"].value;
     if (empt == "") {
-       alert("Please input a Value");
+       alert("Please provide a Name");
        return false;
-    } else {
-       alert('Code has accepted : you can try another');
-       return true;
-    }
+    } 
+    empt = document.forms["contact_form"]["email"].value;
+    if (empt == "") {
+       alert("Please provide an Email");
+       return false;
+    } 
+    return true;
  }
 </script>
   
