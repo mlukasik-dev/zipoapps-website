@@ -2,10 +2,11 @@
 
 set -e
 
-if [ -z "$SLUG" ]; then
-  exit 1
+if [ -z "${slug+_}" ]; then
+    echo "What is the slug the app? (https://zipoapps.com/{SLUG})"
+    read slug
 fi
 
-sed -e "s/SLUGVARIABLE/$SLUG/g" _generator/_APP_dsr.tex > "dsr/$SLUG.tex"
+sed -e "s/SLUGVARIABLE/$slug/g" _APP_dsr.tex > "../dsr/$slug.tex"
 
-pdflatex -output-directory=./dsr ./dsr/"$SLUG".tex
+pdflatex -output-directory=../dsr "../dsr/$slug.tex"

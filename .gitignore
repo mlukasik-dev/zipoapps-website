@@ -292,3 +292,4 @@ TSWLatexianTemp*
 __latexindent_temp.tex
 _generator/_APP_dsr.pdf
 dsr/*.tex
+_generator/apps.csv
