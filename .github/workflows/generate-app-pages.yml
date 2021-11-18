@@ -1,0 +1,68 @@
+name: Generate app pages
+
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: "What is the slug the app? (https://zipoapps.com/{SLUG})"
+        required: true
+      fullname:
+        description: "What is the full name of the app? (for exampe 'Video Crop')"
+        required: true
+      tagline:
+        description: "Provide a tag line for the app? (for example 'Android Video Editor Watermark Free')"
+        required: true
+      summary:
+        description: "Provide a single sentence summary of the app?"
+        required: true
+      email:
+        description: "What is the support email?"
+        required: true
+      iconurl:
+        description: "What is the URL to download the app icon?"
+        required: true
+      package:
+        description: "What is the GP package of the app?"
+        required: true
+
+jobs:
+  generate:
+    name: Generation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Install LaTeX
+        run: |
+          sudo apt install texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra
+
+      - name: Generate
+        working-directory: ./_generator
+        env:
+          slug: ${{ github.event.inputs.slug }}
+          fullname: ${{ github.event.inputs.fullname }}
+          tagline: ${{ github.event.inputs.tagline }}
+          summary: ${{ github.event.inputs.summary }}
+          email: ${{ github.event.inputs.email }}
+          iconurl: ${{ github.event.inputs.iconurl }}
+          package: ${{ github.event.inputs.package }}
+        run: |
+          ./generate.sh -s && ./generate_dsr.sh
+
+      - name: Print generated files
+        run: git status
+
+      - name: Commit and push
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          # Optional, but recommended
+          # Defaults to "Apply automatic changes"
+          commit_message: Generate files for "${{ github.event.inputs.fullname }}"
+
+          file_pattern: "*.md dsr/*.pdf images/*.png"
+
+          # # Optional commit user and author settings
+          # commit_user_name: My GitHub Actions Bot # defaults to "GitHub Actions"
+          # commit_user_email: my-github-actions-bot@example.org # defaults to "actions@github.com"
+          # commit_author: Author <actions@github.com> # defaults to author of the commit that triggered the run
