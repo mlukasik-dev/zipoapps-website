@@ -1,5 +1,12 @@
 #!/bin/sh
 
+set -e
+
+if [ "${PWD##*/}" != "_generator" ]; then
+    echo "Please cd into _generator"
+    exit 1
+fi
+
 echo "Generate terms and privacy for a new app"
 echo "----------------------------------------"
 
