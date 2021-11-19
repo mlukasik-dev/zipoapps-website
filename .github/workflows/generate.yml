@@ -48,7 +48,7 @@ jobs:
           iconurl: ${{ github.event.inputs.iconurl }}
           package: ${{ github.event.inputs.package }}
         run: |
-          ./generate.sh -s && ./generate_dsr.sh
+          python3 ./generate.py
 
       - name: Print generated files
         run: git status

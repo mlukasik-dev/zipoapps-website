@@ -39,16 +39,6 @@ if [ -z "${package+_}" ]; then
     read package
 fi
 
-# If not in a silent mode.
-if [ "$1" != "-s" ]; then
-    echo
-    echo "About to generate the app site, privacy and terms:"
-    for i in {slug,fullname,tagline,summary,email,iconurl,package}; do echo "$i = ${!i}"; done
-    echo
-    echo "Hit any key to continue or break to quit"
-    read
-fi
-
 curl -o ../images/$slug-icon.png -k $iconurl
 if [ $? -ne 0 ]; then
     echo "error downloading icon"

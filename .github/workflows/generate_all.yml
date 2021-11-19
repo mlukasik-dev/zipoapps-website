@@ -1,0 +1,38 @@
+name: Generate web pages and DSR for multiple apps
+
+on:
+  workflow_dispatch:
+    inputs:
+      csv:
+        description: "Content of a CSV file"
+        required: true
+
+jobs:
+  generate:
+    name: Generate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Install LaTeX
+        run: |
+          sudo apt install texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra
+
+      - name: Generate
+        working-directory: ./_generator
+        env:
+          csv: ${{ github.event.inputs.csv }}
+        run: |
+          python3 ./generate.py --csv="$csv"
+
+      - name: Print generated files
+        run: git status
+
+      - name: Commit and push
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Generate files for multiple apps
+          file_pattern: "*.md dsr/*.pdf images/*.png"
+          # Commit should be forced, because workflow runs can be concurrent.
+          push_options: "--force"

@@ -1,32 +1,77 @@
 import argparse
 import csv
+import io
+import os
 import subprocess
+from typing import List, Dict
+
+
+class App:
+    params: Dict
+
+    def __init__(self, **kwargs) -> None:
+        self.params = kwargs
+
+    def generate_web_pages(self):
+        subprocess.check_output(
+            ["./generate.sh"], env=os.environ.update(self.params),
+        )
+
+    def generate_dsr(self):
+        subprocess.check_output(
+            ["./generate_dsr.sh"],
+            env=os.environ.update({"slug": self.params['slug']}),
+        )
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--source", nargs=1, required=True)
-parser.add_argument("--ref", nargs=1)
+parser.add_argument("--csv", nargs=1)
 args = parser.parse_args()
 
+apps: List[App] = []
+if args.csv is not None:
+    with io.StringIO(args.csv[0]) as csvio:
+        rows = csv.DictReader(csvio)
+        for row in rows:
+            apps.append(App(
+                slug=row["slug"],
+                fullname=row["fullname"],
+                tagline=row["tagline"],
+                summary=row["summary"],
+                email=row["slug"],
+                iconurl=row["iconurl"],
+                package=row["package"],
+            ))
+else:
+    apps.append(App(
+        slug=os.environ["slug"],
+        fullname=os.environ["fullname"],
+        tagline=os.environ["tagline"],
+        summary=os.environ["summary"],
+        email=os.environ["slug"],
+        iconurl=os.environ["iconurl"],
+        package=os.environ["package"],
+    ))
 
-with open(args.source[0], "r") as csvfile:
-    rows = csv.DictReader(csvfile)
-    for row in rows:
-        print(f'Triggering workflow for "{row["fullname"]}"')
-        try:
-            subprocess.check_output([
-                "gh", "workflow", "run", "generate.yml",
-                "--ref", args.ref[0] if args.ref is not None else "master",
-                "-f", "slug=" + row["slug"],
-                "-f", "fullname=" + row["fullname"],
-                "-f", "tagline=" + row["tagline"],
-                "-f", "summary=" + row["summary"],
-                "-f", "email=" + row["email"],
-                "-f", "iconurl=" + row["iconurl"],
-                "-f", "package=" + row["package"],
-            ])
-        except subprocess.CalledProcessError as e:
-            print(
-                f'Failed to triggering workflow for "{row["fullname"]}" with the following inputs:')
-            print(row)
-            input("Continue?")
+failed = False
+for app in apps:
+    print(f'Generating web pages for "{app.params["fullname"]}"')
+    try:
+        app.generate_web_pages()
+    except subprocess.CalledProcessError as e:
+        failed = True
+        print(
+            f'Failed to generate web pages for "{app.params["fullname"]}"',
+        )
+
+    print(f'Generating DSR for "{app.params["fullname"]}"')
+    try:
+        app.generate_dsr()
+    except subprocess.CalledProcessError as e:
+        failed = True
+        print(
+            f'Failed to generate DSR for "{app.params["fullname"]}"',
+        )
+
+if failed:
+    exit(1)
