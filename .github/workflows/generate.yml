@@ -1,4 +1,4 @@
-name: Generate app pages
+name: Generate web pages and DSR
 
 on:
   workflow_dispatch:
